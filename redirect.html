@@ -1,0 +1,54 @@
+<style>
+body{
+ margin:0;
+  }
+  
+.link{
+display:flex;
+position:absolute;
+z-index:1;
+width:100vw;
+height:100vh;
+ justify-content: center;
+  align-items: center;
+}
+ a{
+   display:inline-block;
+ vertical-align:middle;
+  color:#08001d;
+ text-decoration:none;
+ font-family:Arial;
+  font-weight:bold;
+ font-size:3.4em;
+ -moz-transition:font-size .48s ease-in;
+-webkit-transition:font-size .48s ease-in;
+ -o-transition:font-size .48s ease-in;
+}
+ .link:hover a{
+  font-size:4em;
+ }
+ a:visited{
+  color:#08001d;
+ }
+ 
+.background{
+position:absolute;
+  display:block;
+z-index:0;
+  width:100vw;
+  height:100vh;
+ -webkit-filter: blur(16px);
+  background:url(http://nedeisenberg.com/assets/beaver_bridge.jpg);
+  background-size:100% auto;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+</style>
+<html>
+<body>  
+<div class="background"></div>
+<div class="link">
+ <a href="index.html"> {Click here to load}</a>
+</div>
+ </body>
+</html>
